@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "session_id": "SESSION_EXAMPLE_001",
+  "course": {
+    "stable_id": "SS2027_PHYSICS_II",
+    "name": "Physics II"
+  },
+  "completed_at": "2027-05-12T15:30:00+02:00",
+  "skill_evidence": [
+    {
+      "skill_id": "PHYS_KINEMATICS_ACCELERATION",
+      "suggested_mastery": 0.78,
+      "recall": 0.8,
+      "application": 0.75,
+      "transfer": 0.7,
+      "independent_solution": true,
+      "notes": "Solved standard problems independently; transfer still needs review."
+    }
+  ],
+  "new_gaps": [
+    "Confuses sign conventions in vertical motion."
+  ],
+  "errors": [],
+  "recommended_next_actions": [
+    "Practice two transfer problems with nonstandard coordinate choices."
+  ]
+}

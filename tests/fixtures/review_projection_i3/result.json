@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "contract_version": "uniflow-scoring-v1",
+  "session_id": "SYNTHETIC-I2-SESSION",
+  "handoff_id": "SYNTHETIC-HANDOFF",
+  "handoff_artifact_sha256": "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b",
+  "phase_states": [
+    {
+      "phase": "LEARNING",
+      "status": "COMPLETED",
+      "difficulty_rationale": "SYNTHETIC"
+    },
+    {
+      "phase": "FINAL_EXAM",
+      "status": "NOT_STARTED",
+      "difficulty_rationale": null
+    }
+  ],
+  "final_exam_decision": null,
+  "tasks": [
+    {
+      "task_id": "TASK-1",
+      "task_type": "SCORED",
+      "phase": "LEARNING",
+      "issued_at": "2026-10-25T12:00:00+01:00",
+      "answered_at": "2026-10-25T12:05:00+01:00",
+      "difficulty": "MEDIUM",
+      "fraction": 0.8,
+      "rubric": "SYNTHETIC",
+      "rationale": "SYNTHETIC",
+      "evidence": "SYNTHETIC answer A1",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC-POWER",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "SYNTHETIC",
+          "rationale": "SYNTHETIC"
+        }
+      ],
+      "additional_skills": []
+    }
+  ],
+  "errors": []
+}

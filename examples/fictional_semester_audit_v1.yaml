@@ -1,0 +1,91 @@
+schema_version: "1.0"
+kind: semester_audit
+audit_id: FICTIONAL_WS2026_27_R1
+semester: FICTIONAL_WS2026_27
+semester_name: Fictional Winter Semester 2026/27
+state: PLANNING
+starts_on: 2026-10-12
+ends_on: 2027-03-31
+timezone: Europe/Berlin
+courses:
+  - stable_id: FICTIONAL_PDP
+    name: Programming Foundations
+    kind: MODULE
+    information_status: CONFIRMED
+    participation: OPTIONAL
+    provenance:
+      source_type: fictional_example
+      information_status: CONFIRMED
+    assessments:
+      - stable_id: FICTIONAL_PDP_EXAM
+        name: Final exam
+        assessment_type: EXAM
+        information_status: CONFIRMED
+    requirements:
+      - stable_id: FICTIONAL_PDP_REQ
+        requirement_type: minimum_percentage
+        parameters:
+          threshold: 50
+          component: practical
+        human_summary: At least half the practical points are required.
+        assessment_stable_id: FICTIONAL_PDP_EXAM
+        information_status: CONFIRMED
+    deadlines:
+      - stable_id: FICTIONAL_PDP_REGISTER
+        title: Exam registration
+        due_date: 2027-01-15
+        information_status: CONFIRMED
+  - stable_id: FICTIONAL_PDP_LINUX
+    name: Linux Practical
+    kind: COMPONENT
+    parent_stable_id: FICTIONAL_PDP
+    information_status: CONFIRMED
+    participation: REQUIRED
+    participation_reason: Practical attendance policy in this fictional example.
+    schedules:
+      - stable_id: FICTIONAL_LINUX_LECTURE
+        activity_type: LECTURE
+        weekday: MONDAY
+        start_time: "14:15"
+        end_time: "15:45"
+        calendar_week_parity: ALL
+        information_status: CONFIRMED
+      - stable_id: FICTIONAL_LINUX_TUTORIAL
+        activity_type: TUTORIAL
+        weekday: WEDNESDAY
+        start_time: "14:15"
+        end_time: "15:45"
+        calendar_week_parity: ODD
+        content_lag_weeks: 1
+        information_status: OBSERVED
+    schedule_exceptions:
+      - stable_id: FICTIONAL_LINUX_CANCEL_1
+        date: 2026-11-02
+        event_type: CANCELLATION
+        title: Lecture cancelled
+        replaces_schedule_id: FICTIONAL_LINUX_LECTURE
+        information_status: CONFIRMED
+    material_release_rules:
+      - stable_id: FICTIONAL_LINUX_SHEETS
+        material_kind: EXERCISE_SHEET
+        weekday: FRIDAY
+        time: "08:00"
+        cadence: WEEKLY
+        information_status: CONFIRMED
+      - stable_id: FICTIONAL_LINUX_SLIDES
+        material_kind: LECTURE_SLIDES
+        weekday: MONDAY
+        time: "10:15"
+        cadence: WEEKLY
+        information_status: OBSERVED
+      - stable_id: FICTIONAL_LINUX_NOTES
+        material_kind: NOTES
+        information_status: UNKNOWN
+        notes: Release timing is unknown.
+    unknowns:
+      - Room assignment is unknown.
+known_unknowns:
+  - The exact slide release pattern for the next component is unknown.
+provenance:
+  source_type: fictional_example
+  information_status: CONFIRMED

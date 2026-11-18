@@ -1,0 +1,21 @@
+schema_version: "1.0"
+session_id: SESSION_EXAMPLE_001
+course:
+  stable_id: SS2027_PHYSICS_II
+  name: Physics II
+goal: Practice acceleration problems using current mechanics materials.
+deadline: "2027-05-12T16:00:00+02:00"
+materials:
+  - stable_id: PHYSII_VL05
+    title: Lecture 5 slides
+    uri: semesters/SS2027/physics/materials/VL05.pdf
+skills:
+  - skill_id: PHYS_KINEMATICS_ACCELERATION
+    name: Acceleration in kinematics
+    current_mastery: 0.62
+    target_mastery: 0.80
+prerequisites:
+  - skill_id: PHYS_KINEMATICS_ACCELERATION
+    prerequisite_skill_id: MATH_CALC_DERIVATIVE_BASIC
+instructions:
+  - Return only the strict learning result JSON schema after the session.

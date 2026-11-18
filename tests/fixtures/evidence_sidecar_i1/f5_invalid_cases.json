@@ -1,0 +1,456 @@
+{
+  "data_classification": "SYNTHETIC",
+  "cases": [
+    {
+      "case_id": "unknown_version",
+      "base": "f1_bound.json",
+      "path": [
+        "sidecar_version"
+      ],
+      "operation": "replace",
+      "value": "future",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "unknown_envelope_field",
+      "base": "f1_bound.json",
+      "path": [
+        "unexpected"
+      ],
+      "operation": "replace",
+      "value": true,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "unknown_nested_field",
+      "base": "f1_bound.json",
+      "path": [
+        "attempts",
+        0,
+        "unexpected"
+      ],
+      "operation": "replace",
+      "value": true,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "duplicate_event",
+      "base": "f1_bound.json",
+      "path": [
+        "events"
+      ],
+      "operation": "duplicate_first",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "duplicate_attempt",
+      "base": "f1_bound.json",
+      "path": [
+        "attempts"
+      ],
+      "operation": "duplicate_first",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "duplicate_rubric",
+      "base": "f1_bound.json",
+      "path": [
+        "rubrics"
+      ],
+      "operation": "duplicate_first",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "duplicate_task",
+      "base": "f1_bound.json",
+      "path": [
+        "tasks"
+      ],
+      "operation": "duplicate_first",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "duplicate_assessment",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments"
+      ],
+      "operation": "duplicate_first",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "duplicate_source",
+      "base": "f1_bound.json",
+      "path": [
+        "source_artifacts"
+      ],
+      "operation": "duplicate_first",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "empty_id",
+      "base": "f1_bound.json",
+      "path": [
+        "sidecar_id"
+      ],
+      "operation": "replace",
+      "value": "   ",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "missing_required",
+      "base": "f1_bound.json",
+      "path": [
+        "handoff_revision"
+      ],
+      "operation": "delete",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "bound_without_hash",
+      "base": "f1_bound.json",
+      "path": [
+        "result_binding",
+        "result_sha256"
+      ],
+      "operation": "replace",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "unknown_contract",
+      "base": "f1_bound.json",
+      "path": [
+        "result_binding",
+        "contract_version"
+      ],
+      "operation": "replace",
+      "value": "uniflow-scoring-v2",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_over_max",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "101",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_negative",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "-1",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_nan",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "NaN",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_infinity",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "Infinity",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_bool",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": true,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_float",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": 1.0,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_int",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": 1,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_leading_zero",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "01",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_trailing_zero",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "1.0",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_exponent",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "1e2",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_plus",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "+1",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_whitespace",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": " 1",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_no_integer",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": ".5",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "points_zero_fraction",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "0.00",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "nonbinary_points",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": "40",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "invalid_sum",
+      "base": "f1_bound.json",
+      "path": [
+        "rubrics",
+        0,
+        "dimension_totals",
+        0,
+        "max_points"
+      ],
+      "operation": "replace",
+      "value": "99",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "pending_nonnull",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "status"
+      ],
+      "operation": "replace",
+      "value": "PENDING",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "recorded_null",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards",
+        0,
+        "awarded_points"
+      ],
+      "operation": "replace",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "missing_award",
+      "base": "f1_bound.json",
+      "path": [
+        "assessments",
+        0,
+        "criterion_awards"
+      ],
+      "operation": "remove_first",
+      "value": null,
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "direct_no_observer",
+      "base": "f1_bound.json",
+      "path": [
+        "attempts",
+        0,
+        "answer_time_claim",
+        "provenance",
+        "provenance_status"
+      ],
+      "operation": "replace",
+      "value": "DIRECT_OBSERVATION",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "unsupported_independence",
+      "base": "f1_bound.json",
+      "path": [
+        "attempts",
+        0,
+        "independence_status"
+      ],
+      "operation": "replace",
+      "value": "VERIFIED_WITHIN_CAPTURE_SCOPE",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "none_partial",
+      "base": "f1_bound.json",
+      "path": [
+        "attempts",
+        0,
+        "assistance_before_attempt",
+        "classification"
+      ],
+      "operation": "replace",
+      "value": "NONE_OBSERVED",
+      "expected": "ValidationError"
+    },
+    {
+      "case_id": "task_skill_mixed",
+      "base": "f1_bound.json",
+      "path": [
+        "rubrics",
+        0,
+        "task_criteria",
+        0,
+        "dimension"
+      ],
+      "operation": "replace",
+      "value": "SKILL",
+      "expected": "ValidationError"
+    }
+  ]
+}

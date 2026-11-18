@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "contract_version": "uniflow-scoring-v1",
+  "session_id": "bbab7f5e-39e5-4095-af36-d5612d3ba4ec",
+  "handoff_id": "abf4332d-1475-4598-8430-f3d51f0e7168",
+  "handoff_artifact_sha256": "535c1e148ff4d4941e3e677e64f1cd2523ec396c6fc646934f503ec39e5a3ff7",
+  "phase_states": [
+    {
+      "phase": "LEARNING",
+      "status": "COMPLETED",
+      "difficulty_rationale": "EASY für Monom-Ableitung; MEDIUM für einfache Verkettungen; HARD für Polynom im inneren Term; MEDIUM als selbstständiger Wiederholungstest. Zeitstempel aus sichtbarer Chat-Chronologie nur näherungsweise rekonstruiert, nicht extern attestiert."
+    },
+    {
+      "phase": "FINAL_EXAM",
+      "status": "COMPLETED",
+      "difficulty_rationale": "EASY für Polynom-Potenzregeln; MEDIUM für einfache polynomielle Innenfunktion; HARD für zwei ineinander verschachtelte Kettenregeln mit zusätzlichem Summanden. Ausgabe-/Antwortzeiten nur näherungsweise rekonstruiert."
+    }
+  ],
+  "final_exam_decision": {
+    "offered_at": "2026-10-24T21:34:00+02:00",
+    "decided_at": "2026-10-24T21:35:22+02:00",
+    "decision": "START"
+  },
+  "tasks": [
+    {
+      "task_id": "LEARN-001",
+      "task_type": "SCORED",
+      "phase": "LEARNING",
+      "issued_at": "2026-10-24T21:10:09+02:00",
+      "answered_at": "2026-10-24T21:14:00+02:00",
+      "difficulty": "EASY",
+      "fraction": 1.0,
+      "rubric": "50 % korrekter Vorfaktor, 50 % korrekter Exponent.",
+      "rationale": "5x^4 ist korrekt; beide Kriterien erfüllt. EASY: direkte Anwendung auf einen Monomterm.",
+      "evidence": "Aufgabe f(x)=x^5; Antwort: 'f'(x) = 5x^4'.",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC_POWER_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Einfachen Potenzterm selbstständig korrekt ableiten.",
+          "rationale": "Exponent 5 korrekt nach vorne und Exponent zu 4 reduziert."
+        }
+      ],
+      "additional_skills": []
+    },
+    {
+      "task_id": "LEARN-002",
+      "task_type": "SCORED",
+      "phase": "LEARNING",
+      "issued_at": "2026-10-24T21:14:15+02:00",
+      "answered_at": "2026-10-24T21:21:00+02:00",
+      "difficulty": "MEDIUM",
+      "fraction": 1.0,
+      "rubric": "25 % Potenzregel, 50 % Kettenregel samt innerer Ableitung, 25 % korrektes Gesamtergebnis; innere/äußere Funktion nachgefragt.",
+      "rationale": "Rechenweg und Identifikation von u(x), v(u), u'(x), v'(u) vollständig korrekt. MEDIUM: einfache lineare Innenfunktion und Funktionszerlegung.",
+      "evidence": "Aufgabe (2x+3)^4. Antwort: '4(2x+3)^3 * 2 <=> 8(2x+3)^3'; anschließend: '2x + 3 ist die innere ... 2 und ... (u)^4'.",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC_POWER_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Äußere Potenz korrekt ableiten.",
+          "rationale": "Vorfaktor 4, Exponent 3 korrekt."
+        },
+        {
+          "skill_id": "SYNTHETIC_CHAIN_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Innere Ableitung 2 mit äußerer Ableitung multiplizieren.",
+          "rationale": "Produkt mit Faktor 2 korrekt angegeben."
+        },
+        {
+          "skill_id": "SYNTHETIC_COMPOSITE_DERIVATIVE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Innere und äußere Funktion sowie Komposition nachvollziehbar identifizieren.",
+          "rationale": "u(x)=2x+3 und v(u)=u^4 erkannt."
+        }
+      ],
+      "additional_skills": []
+    },
+    {
+      "task_id": "LEARN-003",
+      "task_type": "SCORED",
+      "phase": "LEARNING",
+      "issued_at": "2026-10-24T21:22:00+02:00",
+      "answered_at": "2026-10-24T21:27:15+02:00",
+      "difficulty": "HARD",
+      "fraction": 0.5,
+      "rubric": "20 % Funktionszerlegung, 30 % innere und äußere Ableitungen, 30 % Kettenregel, 20 % Endergebnis; tatsächlich zuerkannt 20+15+15+0 Punkte.",
+      "rationale": "20/20 Zerlegung, 15/30 Einzelableitungen, 15/30 Kettenregelansatz, 0/20 Ergebnis. HARD: polynomialer innerer Ausdruck, Transfer und korrekte Klammerung.",
+      "evidence": "Aufgabe f(x)=(x^2-3x+1)^5. Erste Antwort: u=x^2-3x+1; v=u^5; u'=2x-3; v' fälschlich 4(x^2-3x+1)^4; f' fälschlich 4(2x-3)^4*(2x-3). Spätere angeleitete Korrektur ist nicht Teil dieser ersten Bewertung.",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC_POWER_RULE",
+          "fraction": 0.5,
+          "difficulty": null,
+          "criterion": "Innere Potenz und äußeren Exponenten korrekt differenzieren.",
+          "rationale": "Innere Ableitung 2x-3 korrekt; äußere Ableitung mit 4 statt 5 fehlerhaft."
+        },
+        {
+          "skill_id": "SYNTHETIC_CHAIN_RULE",
+          "fraction": 0.3,
+          "difficulty": null,
+          "criterion": "Äußere Ableitung bei ursprünglichem u(x) auswerten und mit u'(x) multiplizieren.",
+          "rationale": "Multiplikationsprinzip erkannt, ursprünglicher Innenterm jedoch mit innerer Ableitung verwechselt."
+        },
+        {
+          "skill_id": "SYNTHETIC_COMPOSITE_DERIVATIVE",
+          "fraction": 0.6,
+          "difficulty": null,
+          "criterion": "Schachtelung zwischen u(x), v(u) und deren Ableitungen unterscheiden.",
+          "rationale": "Innere/äußere Funktion richtig identifiziert, spätere Einsetzung fehlerhaft."
+        }
+      ],
+      "additional_skills": [
+        {
+          "provisional_skill_name": "Algebraische Umformung und Klammerregeln",
+          "observation": "Bei einer angeleiteten Korrektur wurde ein Produkt ohne ausreichende Klammerung notiert; eine anschließende separate Verteilungsaufgabe 5(2x-3)=10x-15 wurde richtig gelöst.",
+          "recommended_next_session": "Klammerung bei Produkten und Gleichwertigkeit von Umformungen gezielt prüfen."
+        }
+      ]
+    },
+    {
+      "task_id": "LEARN-004",
+      "task_type": "SCORED",
+      "phase": "LEARNING",
+      "issued_at": "2026-10-24T21:31:00+02:00",
+      "answered_at": "2026-10-24T21:33:30+02:00",
+      "difficulty": "MEDIUM",
+      "fraction": 0.95,
+      "rubric": "20 % Funktionszerlegung, 30 % Einzelableitungen, 30 % Kettenregel, 20 % Endergebnis; zuerkannt 15+30+30+20.",
+      "rationale": "95/100 gemäß ursprünglicher Rubrik. Funktionsnamen u(x) und v(u) nicht ausdrücklich notiert; die eigentliche Ableitung ist korrekt. MEDIUM: Polynom im Innern.",
+      "evidence": "Aufgabe f(x)=(2x^2-5x+4)^3. Antwort: u'=4x-5; v'(u)=3(2x^2-5x+4)^2; f'=3(2x^2-5x+4)^2*(4x-5).",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC_POWER_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Innere polynomielle und äußere Potenzregel anwenden.",
+          "rationale": "Innere 4x-5 und Faktor 3 mit Exponent 2 korrekt."
+        },
+        {
+          "skill_id": "SYNTHETIC_CHAIN_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Kettenregel inklusive vollständiger Klammerung anwenden.",
+          "rationale": "Innere Ableitung korrekt als ganzer Faktor multipliziert."
+        },
+        {
+          "skill_id": "SYNTHETIC_COMPOSITE_DERIVATIVE",
+          "fraction": 0.75,
+          "difficulty": null,
+          "criterion": "u(x), v(u), u'(x), v'(u) getrennt nachvollziehbar kennzeichnen.",
+          "rationale": "u(x) und v(u) nicht explizit bezeichnet, aber korrekte Verkettung erkennbar."
+        }
+      ],
+      "additional_skills": []
+    },
+    {
+      "task_id": "EXAM-001",
+      "task_type": "SCORED",
+      "phase": "FINAL_EXAM",
+      "issued_at": "2026-10-24T21:35:35+02:00",
+      "answered_at": "2026-10-24T21:39:40+02:00",
+      "difficulty": "EASY",
+      "fraction": 1.0,
+      "rubric": "40 % Ableitung 3x^4; 30 % Ableitung -2x^3; 20 % Ableitung 5x; 10 % Ableitung der Konstante -7.",
+      "rationale": "Gemäß vorab festgelegten vier Termkriterien 100/100: erste Ableitung vollständig korrekt. WICHTIGE REVIEW-DISKREPANZ: anschließende behauptete Gleichheit und finales vereinfachtes Ergebnis waren falsch; Rubrik enthielt keinen eigenen Abzug für ungültige Folgeumformung.",
+      "evidence": "Aufgabe 3x^4-2x^3+5x-7. Antwort begann korrekt mit f'=12x^3-6x^2+5; danach unzulässiges '<=> x(12x)^2-6x^2+5 <=> 144x^2 -36x^2 + 5 <=> 108x^2+5'.",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC_POWER_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Vier ursprüngliche Funktionsterme korrekt ableiten.",
+          "rationale": "Alle vier Ableitungsterme standen in der ersten Antwortzeile korrekt; fragliche algebraische Folgeumformung separat als Fehler erfasst."
+        }
+      ],
+      "additional_skills": [
+        {
+          "provisional_skill_name": "Algebraische Äquivalenz und Termumformung",
+          "observation": "Nach mathematisch korrekter Ableitung wurde eine unzulässige Äquivalenz zu 108x^2+5 behauptet.",
+          "recommended_next_session": "Unterscheide unterschiedliche Potenzen von x und prüfe Äquivalenz vor Gleichheits- bzw. Äquivalenzzeichen."
+        }
+      ]
+    },
+    {
+      "task_id": "EXAM-002",
+      "task_type": "SCORED",
+      "phase": "FINAL_EXAM",
+      "issued_at": "2026-10-24T21:40:10+02:00",
+      "answered_at": "2026-10-24T21:45:00+02:00",
+      "difficulty": "MEDIUM",
+      "fraction": 0.9,
+      "rubric": "20 % Funktionszerlegung, 25 % Einzelableitungen, 40 % Kettenregel, 15 % korrektes Endergebnis; zuerkannt 10+25+40+15.",
+      "rationale": "90/100: v(u) wurde fälschlich als bereits abgeleitete Funktion notiert; restlicher Rechenweg und Endergebnis korrekt. MEDIUM: kubische innere Funktion.",
+      "evidence": "Aufgabe f(x)=(x^3-2x+4)^4. Antwort u(x)=x^3-2x+4, u'=3x^2-2, 'v(x)=4u^3', v'(u)=4(x^3-2x+4)^3, f'=4(x^3-2x+4)^3*(3x^2-2).",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC_POWER_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Polynom- und Potenzableitung korrekt ausführen.",
+          "rationale": "u'(x)=3x²-2 und äußerer Potenzfaktor 4 korrekt."
+        },
+        {
+          "skill_id": "SYNTHETIC_CHAIN_RULE",
+          "fraction": 1.0,
+          "difficulty": null,
+          "criterion": "Äußere und innere Ableitung korrekt multiplizieren.",
+          "rationale": "Richtige und vollständig geklammerte Endableitung."
+        },
+        {
+          "skill_id": "SYNTHETIC_COMPOSITE_DERIVATIVE",
+          "fraction": 0.5,
+          "difficulty": null,
+          "criterion": "Äußere Funktion v(u) von ihrer Ableitung v'(u) unterscheiden.",
+          "rationale": "v(x)=4u³ statt v(u)=u⁴ notiert; sonstige Komposition korrekt."
+        }
+      ],
+      "additional_skills": []
+    },
+    {
+      "task_id": "EXAM-003",
+      "task_type": "SCORED",
+      "phase": "FINAL_EXAM",
+      "issued_at": "2026-10-24T21:45:45+02:00",
+      "answered_at": "2026-10-24T21:56:50+02:00",
+      "difficulty": "HARD",
+      "fraction": 0.25,
+      "rubric": "25 % Verschachtelung, 25 % innere Bestandteile, 30 % mehrfache Kettenregel, 20 % Endergebnis; zuerkannt 15+5+5+0.",
+      "rationale": "25/100: Schachtelung teilweise erkannt, 2x als Ableitung von x²+1 benannt; mittlere Ableitung und Produkt-/Summenbehandlung stark fehlerhaft. HARD: mehrstufige Verkettung und -2x als separater Summand.",
+      "evidence": "Aufgabe ((x^2+1)^3-2x)^4. Antwort u=(x^2+1)^3; v=(u-2x); w=((u)v)^4; u'=2x; v'=3(x²+1)²*-2; anschließend falsche Verschachtelung und Ableitung.",
+      "assistance": "NONE",
+      "hints": [],
+      "independent_solution": true,
+      "skill_marks": [
+        {
+          "skill_id": "SYNTHETIC_POWER_RULE",
+          "fraction": 0.2,
+          "difficulty": null,
+          "criterion": "x²+1 sowie innere und äußere Potenzen korrekt ableiten.",
+          "rationale": "2x wurde als Teilableitung erkannt, aber weitere Potenzregeln falsch eingesetzt."
+        },
+        {
+          "skill_id": "SYNTHETIC_CHAIN_RULE",
+          "fraction": 0.1,
+          "difficulty": null,
+          "criterion": "Mehrstufige Kettenregel und Summe getrennt behandeln.",
+          "rationale": "Faktor aus -2x statt -2 als additiven Ableitungsterm benutzt; äußere Verkettung fehlerhaft."
+        },
+        {
+          "skill_id": "SYNTHETIC_COMPOSITE_DERIVATIVE",
+          "fraction": 0.4,
+          "difficulty": null,
+          "criterion": "Drei Schachtelungsebenen nachvollziehbar zuordnen.",
+          "rationale": "Ansatz mit mehreren Ebenen vorhanden; Struktur als Produkt statt als Summe/Komposition missdeutet."
+        }
+      ],
+      "additional_skills": []
+    }
+  ],
+  "errors": [
+    {
+      "task_id": "LEARN-003",
+      "skill_id": "SYNTHETIC_POWER_RULE",
+      "description": "Vorfaktor 4 statt 5 bei Ableitung von u^5.",
+      "context": "Erste selbstständige Antwort auf LEARN-003; später nach Erläuterung richtig korrigiert.",
+      "status": "OBSERVED"
+    },
+    {
+      "task_id": "LEARN-003",
+      "skill_id": "SYNTHETIC_CHAIN_RULE",
+      "description": "Ursprüngliche innere Funktion u(x) innerhalb der Potenz durch u'(x) ersetzt.",
+      "context": "Falsche Form 4(2x-3)^4*(2x-3); unabhängig von nachträglicher angeleiteter Korrektur bewertet.",
+      "status": "OBSERVED"
+    },
+    {
+      "task_id": "EXAM-001",
+      "skill_id": null,
+      "description": "Nach korrekter erster Ableitung ungültige algebraische Äquivalenz und falsches finales Vereinfachungsergebnis behauptet.",
+      "context": "Zunächst 12x^3-6x^2+5, anschließend als äquivalent 108x²+5 notiert; aktuelle 100%-Rubrik deckt diesen Fehler nicht numerisch ab: Human Review nötig.",
+      "status": "OBSERVED"
+    },
+    {
+      "task_id": "EXAM-002",
+      "skill_id": "SYNTHETIC_COMPOSITE_DERIVATIVE",
+      "description": "Äußere Funktion v(u) mit ihrer Ableitung v'(u) verwechselt.",
+      "context": "v(x)=4u³ statt v(u)=u⁴; vollständige Ableitung dennoch korrekt.",
+      "status": "OBSERVED"
+    },
+    {
+      "task_id": "EXAM-003",
+      "skill_id": "SYNTHETIC_CHAIN_RULE",
+      "description": "Abgeleiteten -2x-Term fälschlich multiplikativ statt additiv/subtraktiv verarbeitet.",
+      "context": "Statt 3(x²+1)²·2x-2 wurde 3(x²+1)²·(-2) verwendet.",
+      "status": "OBSERVED"
+    },
+    {
+      "task_id": "EXAM-003",
+      "skill_id": "SYNTHETIC_COMPOSITE_DERIVATIVE",
+      "description": "Verschachtelte Funktionen nicht korrekt voneinander getrennt.",
+      "context": "Ausdruck der mittleren Funktion als vermeintliches Produkt und unzutreffende äußere Verkettung dargestellt.",
+      "status": "OBSERVED"
+    }
+  ]
+}

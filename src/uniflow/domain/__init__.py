@@ -1,0 +1,1 @@
+"""GUI-independent domain concepts."""

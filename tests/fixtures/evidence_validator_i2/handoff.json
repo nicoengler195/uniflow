@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "protocol_version": "subject-learning-v1",
+  "session_id": "SYNTHETIC-I2-SESSION",
+  "handoff_id": "SYNTHETIC-HANDOFF",
+  "generated_at": "2026-10-25T10:00:00+01:00",
+  "context_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+  "semester": {
+    "id": "SYNTHETIC-SEM",
+    "stable_id": "SYNTHETIC-SEM",
+    "name": "Synthetic semester",
+    "timezone": "Europe/Berlin",
+    "state": "ACTIVE"
+  },
+  "course": {
+    "id": "SYNTHETIC-COURSE",
+    "stable_id": "SYNTHETIC-COURSE",
+    "name": "Synthetic course",
+    "parent_course_id": null,
+    "information_status": "CONFIRMED"
+  },
+  "goal": "SYNTHETIC validator test only",
+  "target_skills": [
+    {
+      "skill_id": "SYNTHETIC-POWER",
+      "name": "Synthetic skill",
+      "kind": "ABILITY",
+      "description": null,
+      "domain": null,
+      "ordinal": 0,
+      "source_status": "NO_REVIEWED_SOURCE"
+    }
+  ],
+  "prerequisites": [],
+  "dependency_edges": [],
+  "mastery_snapshot": [],
+  "academic_context": {
+    "deadlines": [],
+    "assessments": [],
+    "assessment_requirements": []
+  },
+  "instructions": [
+    "SYNTHETIC data only"
+  ],
+  "source_data": [],
+  "return_contract": {
+    "expected_result_schema_version": "2.0",
+    "session_id": "SYNTHETIC-I2-SESSION",
+    "handoff_id": "SYNTHETIC-HANDOFF",
+    "course_id": "SYNTHETIC-COURSE",
+    "allowed_skill_ids": [
+      "SYNTHETIC-POWER"
+    ],
+    "expected_filename": "synthetic.json"
+  }
+}

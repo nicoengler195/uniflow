@@ -1,0 +1,197 @@
+# UniFlow portfolio demo. All courses, rooms, schedules and deadlines are fictional.
+schema_version: "1.0"
+kind: semester_audit
+audit_id: DEMO_WS2026_27_R1
+semester: DEMO_WS2026_27
+semester_name: "UniFlow Demo · Wintersemester 2026/27 (fiktiv)"
+state: ACTIVE
+starts_on: 2026-10-19
+ends_on: 2027-03-19
+timezone: Europe/Berlin
+provenance:
+  source_type: fictional_example
+  information_status: CONFIRMED
+courses:
+  - stable_id: DEMO_WS2026_27_ET2
+    code: ET2
+    name: Elektrotechnik II
+    kind: MODULE
+    information_status: CONFIRMED
+    schedules:
+      - stable_id: DEMO_WS2026_27_ET2_LECTURE
+        activity_type: LECTURE
+        weekday: MONDAY
+        start_time: "09:00"
+        end_time: "10:30"
+        location: "Gebäude Aster · Hörsaal A-201"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+      - stable_id: DEMO_WS2026_27_ET2_TUTORIAL
+        activity_type: TUTORIAL
+        weekday: THURSDAY
+        start_time: "10:15"
+        end_time: "11:45"
+        location: "Gebäude Aster · Labor A-014"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+    deadlines:
+      - stable_id: DEMO_WS2026_27_ET2_DEADLINE
+        title: "Übungsblatt 4 · Wechselstromnetzwerke"
+        due_date: 2026-11-20
+        due_time: "18:00"
+        information_status: CONFIRMED
+    material_release_rules:
+      - stable_id: DEMO_WS2026_27_ET2_SLIDES
+        material_kind: LECTURE_SLIDES
+        schedule_stable_id: DEMO_WS2026_27_ET2_LECTURE
+        weekday: MONDAY
+        time: "08:30"
+        cadence: WEEKLY
+        information_status: CONFIRMED
+
+  - stable_id: DEMO_WS2026_27_TI2
+    code: TI2
+    name: Theoretische Informatik II
+    kind: MODULE
+    information_status: CONFIRMED
+    schedules:
+      - stable_id: DEMO_WS2026_27_TI2_LECTURE
+        activity_type: LECTURE
+        weekday: MONDAY
+        start_time: "13:30"
+        end_time: "15:00"
+        location: "Gebäude Birke · Hörsaal B-105"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+      - stable_id: DEMO_WS2026_27_TI2_TUTORIAL
+        activity_type: TUTORIAL
+        weekday: WEDNESDAY
+        start_time: "10:00"
+        end_time: "11:30"
+        location: "Gebäude Birke · Seminarraum B-217"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+    deadlines:
+      - stable_id: DEMO_WS2026_27_TI2_DEADLINE
+        title: "Übungsblatt 4 · Reduktionen und Entscheidbarkeit"
+        due_date: 2026-11-24
+        information_status: CONFIRMED
+    material_release_rules:
+      - stable_id: DEMO_WS2026_27_TI2_SHEETS
+        material_kind: EXERCISE_SHEET
+        schedule_stable_id: DEMO_WS2026_27_TI2_TUTORIAL
+        weekday: MONDAY
+        time: "16:00"
+        cadence: WEEKLY
+        information_status: CONFIRMED
+
+  - stable_id: DEMO_WS2026_27_RT
+    code: RT
+    name: Regelungstechnik
+    kind: MODULE
+    information_status: CONFIRMED
+    schedules:
+      - stable_id: DEMO_WS2026_27_RT_LECTURE
+        activity_type: LECTURE
+        weekday: TUESDAY
+        start_time: "09:15"
+        end_time: "10:45"
+        location: "Gebäude Aster · Hörsaal A-201"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+      - stable_id: DEMO_WS2026_27_RT_TUTORIAL
+        activity_type: TUTORIAL
+        weekday: THURSDAY
+        start_time: "14:00"
+        end_time: "15:30"
+        location: "Gebäude Aster · Labor A-032"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+    deadlines:
+      - stable_id: DEMO_WS2026_27_RT_DEADLINE
+        title: "Laborprotokoll · Sprungantwort eines PT2-Systems"
+        due_date: 2026-11-26
+        due_time: "12:00"
+        information_status: CONFIRMED
+    material_release_rules:
+      - stable_id: DEMO_WS2026_27_RT_SLIDES
+        material_kind: LECTURE_SLIDES
+        schedule_stable_id: DEMO_WS2026_27_RT_LECTURE
+        weekday: TUESDAY
+        time: "08:30"
+        cadence: WEEKLY
+        information_status: CONFIRMED
+
+  - stable_id: DEMO_WS2026_27_NM
+    code: NM
+    name: Numerische Mathematik
+    kind: MODULE
+    information_status: CONFIRMED
+    schedules:
+      - stable_id: DEMO_WS2026_27_NM_LECTURE
+        activity_type: LECTURE
+        weekday: TUESDAY
+        start_time: "13:00"
+        end_time: "14:30"
+        location: "Gebäude Birke · Hörsaal B-105"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+      - stable_id: DEMO_WS2026_27_NM_TUTORIAL
+        activity_type: TUTORIAL
+        weekday: FRIDAY
+        start_time: "09:00"
+        end_time: "10:30"
+        location: "Gebäude Birke · Rechnerraum B-044"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+    deadlines:
+      - stable_id: DEMO_WS2026_27_NM_DEADLINE
+        title: "Rechenpraktikum · Kondition und Fehlerfortpflanzung"
+        due_date: 2026-11-23
+        due_time: "17:00"
+        information_status: CONFIRMED
+    material_release_rules:
+      - stable_id: DEMO_WS2026_27_NM_SHEETS
+        material_kind: EXERCISE_SHEET
+        schedule_stable_id: DEMO_WS2026_27_NM_TUTORIAL
+        weekday: WEDNESDAY
+        time: "12:00"
+        cadence: WEEKLY
+        information_status: CONFIRMED
+
+  - stable_id: DEMO_WS2026_27_RAS
+    code: RAS
+    name: Robotik und autonome Systeme
+    kind: MODULE
+    information_status: CONFIRMED
+    schedules:
+      - stable_id: DEMO_WS2026_27_RAS_LECTURE
+        activity_type: LECTURE
+        weekday: WEDNESDAY
+        start_time: "14:00"
+        end_time: "15:30"
+        location: "Gebäude Zeder · Hörsaal Z-110"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+      - stable_id: DEMO_WS2026_27_RAS_TUTORIAL
+        activity_type: TUTORIAL
+        weekday: FRIDAY
+        start_time: "11:00"
+        end_time: "12:30"
+        location: "Gebäude Zeder · Robotiklabor Z-028"
+        valid_until: 2027-02-05
+        information_status: CONFIRMED
+    deadlines:
+      - stable_id: DEMO_WS2026_27_RAS_DEADLINE
+        title: "Simulationsaufgabe · Odometrie für einen mobilen Roboter"
+        due_date: 2026-11-27
+        due_time: "16:00"
+        information_status: CONFIRMED
+    material_release_rules:
+      - stable_id: DEMO_WS2026_27_RAS_SLIDES
+        material_kind: LECTURE_SLIDES
+        schedule_stable_id: DEMO_WS2026_27_RAS_LECTURE
+        weekday: WEDNESDAY
+        time: "13:00"
+        cadence: WEEKLY
+        information_status: CONFIRMED

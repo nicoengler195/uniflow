@@ -1,0 +1,2536 @@
+{
+  "validator_version": "uniflow-evidence-validator-i2.0",
+  "sidecar_id": "SYNTHETIC-I2",
+  "sidecar_version": "uniflow-evidence-sidecar-i1.0",
+  "sidecar_sha256": "7993660e942583e1596b4606fd507774874f5060b801c664318cc78662cae45d",
+  "declared_result_binding": [
+    [
+      "status",
+      "BOUND"
+    ],
+    [
+      "result_sha256",
+      "15efba1a59848aad822a7abc5ce68605c9e5e417407a779301d2e05bfd941fc5"
+    ],
+    [
+      "contract_version",
+      "uniflow-scoring-v1"
+    ],
+    [
+      "reason",
+      null
+    ]
+  ],
+  "checked_artifacts": [
+    {
+      "artifact_id": "SYNTHETIC-SOURCE",
+      "sha256": "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08",
+      "byte_length": 72
+    },
+    {
+      "artifact_id": "handoff",
+      "sha256": "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b",
+      "byte_length": 1483
+    },
+    {
+      "artifact_id": "result",
+      "sha256": "15efba1a59848aad822a7abc5ce68605c9e5e417407a779301d2e05bfd941fc5",
+      "byte_length": 1238
+    }
+  ],
+  "findings": [
+    {
+      "status": "UNVERIFIED",
+      "code": "NO_EXTERNAL_TRUST_ANCHOR",
+      "object_ids": [],
+      "location": "",
+      "reason": "Hashes and claims may be jointly replaced. No authenticated author, collector, prior rubric or independence is established.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "SIDECAR_SCHEMA",
+      "object_ids": [
+        "SYNTHETIC-I2"
+      ],
+      "location": "",
+      "reason": "Unmodified I1 schema accepted.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_SCHEMA",
+      "object_ids": [
+        "handoff"
+      ],
+      "location": "",
+      "reason": "Original contract accepted.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_SCHEMA",
+      "object_ids": [
+        "result"
+      ],
+      "location": "",
+      "reason": "Original contract accepted.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_SHA256",
+      "object_ids": [
+        "SYNTHETIC-I2",
+        "result"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "15efba1a59848aad822a7abc5ce68605c9e5e417407a779301d2e05bfd941fc5"
+        ],
+        [
+          "expected",
+          "15efba1a59848aad822a7abc5ce68605c9e5e417407a779301d2e05bfd941fc5"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_SHA256",
+      "object_ids": [
+        "SYNTHETIC-I2",
+        "handoff"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b"
+        ],
+        [
+          "expected",
+          "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_REVISION",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "1"
+        ],
+        [
+          "expected",
+          "1"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "REVISION_CONTEXT_UNAUTHENTICATED",
+      "object_ids": [],
+      "location": "",
+      "reason": "Revision context is caller supplied, not an authenticated receipt.",
+      "values": []
+    },
+    {
+      "status": "CONFLICT",
+      "code": "HANDOFF_SESSION",
+      "object_ids": [],
+      "location": "",
+      "reason": "Explicit values disagree.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-FOREIGN-SESSION"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-I2-SESSION"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_ID",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-HANDOFF"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-HANDOFF"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_RETURN_SESSION",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-I2-SESSION"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-I2-SESSION"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_RETURN_ID",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-HANDOFF"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-HANDOFF"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_RETURN_COURSE",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-COURSE"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-COURSE"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "HANDOFF_SKILL_INVENTORY",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "['SYNTHETIC-POWER']"
+        ],
+        [
+          "expected",
+          "['SYNTHETIC-POWER']"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_CONTRACT",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "uniflow-scoring-v1"
+        ],
+        [
+          "expected",
+          "uniflow-scoring-v1"
+        ]
+      ]
+    },
+    {
+      "status": "CONFLICT",
+      "code": "RESULT_SESSION",
+      "object_ids": [],
+      "location": "",
+      "reason": "Explicit values disagree.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-I2-SESSION"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-FOREIGN-SESSION"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_HANDOFF_ID",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-HANDOFF"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-HANDOFF"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_HANDOFF_SHA256",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b"
+        ],
+        [
+          "expected",
+          "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_ORIGINAL_HANDOFF_SHA256",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b"
+        ],
+        [
+          "expected",
+          "5147ea1f9eebb26659717b01b40159a59821d39a519f30461c74e6ebabdb495b"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_ORIGINAL_SESSION",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-I2-SESSION"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-I2-SESSION"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_ORIGINAL_HANDOFF_ID",
+      "object_ids": [],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "SYNTHETIC-HANDOFF"
+        ],
+        [
+          "expected",
+          "SYNTHETIC-HANDOFF"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "ARTIFACT_SHA256",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "ARTIFACT_LENGTH",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "72"
+        ],
+        [
+          "expected",
+          "72"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/tasks/0/task_statement_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/tasks/0/task_statement_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/tasks/0/issued_time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/tasks/0/issued_time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/tasks/0/issued_time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/rubrics/0/task_statement_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/rubrics/0/task_statement_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/rubrics/0/rubric_provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/rubrics/0/rubric_provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/0/source_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/0/source_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/events/0/time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/0/time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/0/time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/0/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/0/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/1/source_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/1/source_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/events/1/time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/1/time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/1/time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/1/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/1/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/2/source_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/2/source_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/events/2/time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/2/time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/2/time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/2/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/2/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/3/source_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/3/source_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/events/3/time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/3/time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/3/time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/3/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/3/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/4/source_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/4/source_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/events/4/time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/4/time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/4/time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/4/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/4/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/5/source_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/5/source_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/events/5/time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/5/time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/5/time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/5/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/5/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/6/source_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/6/source_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/events/6/time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/6/time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/6/time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/6/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/events/6/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/0/answer_evidence/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/0/answer_evidence/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/attempts/0/answer_time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/0/answer_time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/0/answer_time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/0/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/0/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/1/answer_evidence/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/1/answer_evidence/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TIME_OFFSET_LABEL",
+      "object_ids": [],
+      "location": "/attempts/1/answer_time_claim/asserted_at",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "+0100"
+        ],
+        [
+          "expected",
+          "+0100"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/1/answer_time_claim/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/1/answer_time_claim/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/1/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/attempts/1/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/0/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/0/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/0/assessed_components/0/evidence_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/0/assessed_components/0/evidence_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/1/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/1/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/1/assessed_components/0/evidence_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/1/assessed_components/0/evidence_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/2/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/2/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/2/assessed_components/0/evidence_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/criterion_awards/2/assessed_components/0/evidence_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/0/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/0/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/0/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/0/assessed_components/0/evidence_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/0/assessed_components/0/evidence_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/1/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/1/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/1/assessed_components/0/evidence_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/1/assessed_components/0/evidence_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/2/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/2/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/2/assessed_components/0/evidence_ref",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/criterion_awards/2/assessed_components/0/evidence_ref",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "REF_RESOLVED",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/provenance/evidence_refs/0",
+      "reason": "Selector and optional exact quotation verified.",
+      "values": []
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "REF_MESSAGE_ID_ABSENT",
+      "object_ids": [
+        "SYNTHETIC-SOURCE"
+      ],
+      "location": "/assessments/1/provenance/evidence_refs/0",
+      "reason": "Message identity unavailable; locator does not authenticate provenance.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_TASK_PHASE",
+      "object_ids": [
+        "TASK-1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "LEARNING"
+        ],
+        [
+          "expected",
+          "LEARNING"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "TASK_RUBRIC_TASK",
+      "object_ids": [
+        "TASK-1",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "TASK_RUBRIC_DIFFICULTY",
+      "object_ids": [
+        "TASK-1",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "MEDIUM"
+        ],
+        [
+          "expected",
+          "MEDIUM"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "TASK_PHASE",
+      "object_ids": [
+        "R1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "LEARNING"
+        ],
+        [
+          "expected",
+          "LEARNING"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "SKILL_SCOPE",
+      "object_ids": [
+        "R1",
+        "POWER"
+      ],
+      "location": "/rubrics",
+      "reason": "Membership in explicit handoff scope checked.",
+      "values": [
+        [
+          "declared_skill_id",
+          "SYNTHETIC-POWER"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RUBRIC_EVENT_TYPE",
+      "object_ids": [
+        "R1",
+        "E-RUBRIC"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "RUBRIC_DECLARED"
+        ],
+        [
+          "expected",
+          "RUBRIC_DECLARED"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RUBRIC_EVENT_TASK",
+      "object_ids": [
+        "R1",
+        "E-RUBRIC"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RUBRIC_DECLARATION_HASH",
+      "object_ids": [
+        "R1",
+        "E-RUBRIC"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "RUBRIC_HASH_REPRESENTATION",
+      "object_ids": [
+        "R1"
+      ],
+      "location": "",
+      "reason": "I1 specifies no serialized rubric-body hashing convention. Event source hash alone cannot verify every rubric field.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "RUBRIC_PREDECLARATION",
+      "object_ids": [
+        "R1"
+      ],
+      "location": "",
+      "reason": "Local hash and revision are not an external pre-answer receipt.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "SKILL_SCOPE",
+      "object_ids": [
+        "TASK-1"
+      ],
+      "location": "/result/tasks/0/skill_marks",
+      "reason": "Membership in explicit handoff scope checked.",
+      "values": [
+        [
+          "declared_skill_id",
+          "SYNTHETIC-POWER"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_GRAPH_CYCLE",
+      "object_ids": [],
+      "location": "",
+      "reason": "No parent cycle in supplied graph.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_CONTENT_SHA256",
+      "object_ids": [
+        "E-TASK"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "EVENT_SEQUENCE_ABSENT",
+      "object_ids": [
+        "E-TASK"
+      ],
+      "location": "",
+      "reason": "No collector position supplied; list order is not chronology.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_CONTENT_SHA256",
+      "object_ids": [
+        "E-RUBRIC"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "EVENT_SEQUENCE_ABSENT",
+      "object_ids": [
+        "E-RUBRIC"
+      ],
+      "location": "",
+      "reason": "No collector position supplied; list order is not chronology.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_ATTEMPT_TASK",
+      "object_ids": [
+        "E-A1",
+        "A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_CONTENT_SHA256",
+      "object_ids": [
+        "E-A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "EVENT_SEQUENCE_ABSENT",
+      "object_ids": [
+        "E-A1"
+      ],
+      "location": "",
+      "reason": "No collector position supplied; list order is not chronology.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_ATTEMPT_TASK",
+      "object_ids": [
+        "E-AS1",
+        "A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "EVENT_AFTER_ANSWER_TIME",
+      "object_ids": [
+        "A1",
+        "E-AS1"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_CONTENT_SHA256",
+      "object_ids": [
+        "E-AS1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "EVENT_SEQUENCE_ABSENT",
+      "object_ids": [
+        "E-AS1"
+      ],
+      "location": "",
+      "reason": "No collector position supplied; list order is not chronology.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_ATTEMPT_TASK",
+      "object_ids": [
+        "E-EXPLANATION",
+        "A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_CONTENT_SHA256",
+      "object_ids": [
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "EVENT_SEQUENCE_ABSENT",
+      "object_ids": [
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "No collector position supplied; list order is not chronology.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "EVENT_PARENT_TIME",
+      "object_ids": [
+        "E-A1",
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_ATTEMPT_TASK",
+      "object_ids": [
+        "E-A2",
+        "A2"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_CONTENT_SHA256",
+      "object_ids": [
+        "E-A2"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "EVENT_SEQUENCE_ABSENT",
+      "object_ids": [
+        "E-A2"
+      ],
+      "location": "",
+      "reason": "No collector position supplied; list order is not chronology.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "EVENT_PARENT_TIME",
+      "object_ids": [
+        "E-EXPLANATION",
+        "E-A2"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_ATTEMPT_TASK",
+      "object_ids": [
+        "E-AS2",
+        "A2"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "EVENT_AFTER_ANSWER_TIME",
+      "object_ids": [
+        "A2",
+        "E-AS2"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "EVENT_CONTENT_SHA256",
+      "object_ids": [
+        "E-AS2"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ],
+        [
+          "expected",
+          "76477e85053df70beb11100e5df29458c57cc89e2b6e8cfb592a929b11122f08"
+        ]
+      ]
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "EVENT_SEQUENCE_ABSENT",
+      "object_ids": [
+        "E-AS2"
+      ],
+      "location": "",
+      "reason": "No collector position supplied; list order is not chronology.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "EVENT_PARENT_TIME",
+      "object_ids": [
+        "E-A2",
+        "E-AS2"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "COLLECTOR_SEQUENCE_UNAUTHENTICATED",
+      "object_ids": [],
+      "location": "",
+      "reason": "I1 has no collector identity or protected sequence receipt.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TASK_PHASE",
+      "object_ids": [
+        "A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "LEARNING"
+        ],
+        [
+          "expected",
+          "LEARNING"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "TASK_ANSWER_TIME",
+      "object_ids": [
+        "TASK-1",
+        "A1"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "RUBRIC_BEFORE_ANSWER_TIME",
+      "object_ids": [
+        "R1",
+        "A1"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "ATTEMPT_ORDER_DECLARED",
+      "object_ids": [
+        "A1"
+      ],
+      "location": "",
+      "reason": "Order and independence are local claims, not authenticated history.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "ATTEMPT_ASSESSMENT_OWNER",
+      "object_ids": [
+        "A1",
+        "ASSESSMENT-A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "A1"
+        ],
+        [
+          "expected",
+          "A1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "ATTEMPT_EVENT_TASK",
+      "object_ids": [
+        "A1",
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "FEEDBACK_ATTEMPT_OWNER",
+      "object_ids": [
+        "A1",
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "A1"
+        ],
+        [
+          "expected",
+          "A1"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "FEEDBACK_AFTER_TIME",
+      "object_ids": [
+        "A1",
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "TASK_PHASE",
+      "object_ids": [
+        "A2"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "LEARNING"
+        ],
+        [
+          "expected",
+          "LEARNING"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "TASK_ANSWER_TIME",
+      "object_ids": [
+        "TASK-1",
+        "A2"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "RUBRIC_BEFORE_ANSWER_TIME",
+      "object_ids": [
+        "R1",
+        "A2"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "ATTEMPT_ORDER_DECLARED",
+      "object_ids": [
+        "A2"
+      ],
+      "location": "",
+      "reason": "Order and independence are local claims, not authenticated history.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "ATTEMPT_ASSESSMENT_OWNER",
+      "object_ids": [
+        "A2",
+        "ASSESSMENT-A2"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "A2"
+        ],
+        [
+          "expected",
+          "A2"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "ATTEMPT_EVENT_TASK",
+      "object_ids": [
+        "A2",
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "ASSISTANCE_BEFORE_TIME",
+      "object_ids": [
+        "A2",
+        "E-EXPLANATION"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "CORRECTION_TASK",
+      "object_ids": [
+        "A2",
+        "A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "CORRECTION_TIME",
+      "object_ids": [
+        "A1",
+        "A2"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "CORRECTION_CYCLE",
+      "object_ids": [],
+      "location": "",
+      "reason": "Correction graph cycle check.",
+      "values": []
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "ATTEMPT_ORDER_TIME",
+      "object_ids": [
+        "A1",
+        "A2"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "ASSESSMENT_RUBRIC_TASK",
+      "object_ids": [
+        "ASSESSMENT-A1",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "ASSESSMENT_RUBRIC_PHASE",
+      "object_ids": [
+        "ASSESSMENT-A1",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "LEARNING"
+        ],
+        [
+          "expected",
+          "LEARNING"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "ASSESSMENT_RUBRIC_BEFORE_ANSWER_TIME",
+      "object_ids": [
+        "ASSESSMENT-A1",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "ASSESSMENT_RUBRIC_TASK",
+      "object_ids": [
+        "ASSESSMENT-A2",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "TASK-1"
+        ],
+        [
+          "expected",
+          "TASK-1"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "ASSESSMENT_RUBRIC_PHASE",
+      "object_ids": [
+        "ASSESSMENT-A2",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "LEARNING"
+        ],
+        [
+          "expected",
+          "LEARNING"
+        ]
+      ]
+    },
+    {
+      "status": "UNVERIFIED",
+      "code": "ASSESSMENT_RUBRIC_BEFORE_ANSWER_TIME",
+      "object_ids": [
+        "ASSESSMENT-A2",
+        "R1"
+      ],
+      "location": "",
+      "reason": "Declared windows support order; no independent historical authentication.",
+      "values": []
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_TASK_DIFFICULTY",
+      "object_ids": [
+        "TASK-1",
+        "ASSESSMENT-A1"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "MEDIUM"
+        ],
+        [
+          "expected",
+          "MEDIUM"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_SCORE",
+      "object_ids": [
+        "TASK-1",
+        "ASSESSMENT-A1"
+      ],
+      "location": "/assessments/0/criterion_awards",
+      "reason": "Exact dimension comparison; no authoritative score or rewrite.",
+      "values": [
+        [
+          "sidecar_awarded",
+          "80"
+        ],
+        [
+          "sidecar_maximum",
+          "100"
+        ],
+        [
+          "v1_fraction",
+          "0.8"
+        ],
+        [
+          "v1_artifact_id",
+          "result"
+        ],
+        [
+          "sidecar_evidence_path",
+          "/assessments/0/criterion_awards"
+        ],
+        [
+          "v1_evidence_path",
+          "/tasks/0/evidence"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_SKILL_DIFFICULTY",
+      "object_ids": [
+        "TASK-1",
+        "ASSESSMENT-A1",
+        "SYNTHETIC-POWER"
+      ],
+      "location": "",
+      "reason": "Exact equality.",
+      "values": [
+        [
+          "actual",
+          "MEDIUM"
+        ],
+        [
+          "expected",
+          "MEDIUM"
+        ]
+      ]
+    },
+    {
+      "status": "PASS",
+      "code": "RESULT_SCORE",
+      "object_ids": [
+        "TASK-1",
+        "ASSESSMENT-A1",
+        "SYNTHETIC-POWER"
+      ],
+      "location": "/assessments/0/criterion_awards",
+      "reason": "Exact dimension comparison; no authoritative score or rewrite.",
+      "values": [
+        [
+          "sidecar_awarded",
+          "100"
+        ],
+        [
+          "sidecar_maximum",
+          "100"
+        ],
+        [
+          "v1_fraction",
+          "1.0"
+        ],
+        [
+          "v1_artifact_id",
+          "result"
+        ],
+        [
+          "sidecar_evidence_path",
+          "/assessments/0/criterion_awards"
+        ],
+        [
+          "v1_evidence_path",
+          "/tasks/0/evidence"
+        ]
+      ]
+    }
+  ],
+  "not_checked": [
+    "Mathematical truth, rubric quality and mastery",
+    "Authenticated authorship, observer identity, pre-answer existence and complete assistance history",
+    "Filesystem/Windows path loading (bytes-only API); product integration and review UI",
+    "Global latest revision or deletion of history without an external trusted inventory",
+    "JSON-pointer original lexical byte spans and free-text timezone/precision semantics"
+  ],
+  "human_review_required": true
+}

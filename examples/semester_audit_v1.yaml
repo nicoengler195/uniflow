@@ -1,0 +1,16 @@
+schema_version: "1.0"
+kind: semester_audit
+audit_id: FICTIONAL_SCHEMA_EXAMPLE_R1
+semester: FICTIONAL_SCHEMA_EXAMPLE
+semester_name: Fictional schema example
+state: PLANNING
+timezone: Europe/Berlin
+courses:
+  - stable_id: FICTIONAL_NUMERICS
+    name: Numerical Methods
+    kind: MODULE
+    information_status: CONFIRMED
+    deadlines:
+      - stable_id: FICTIONAL_NUMERICS_REGISTRATION
+        title: Exam registration
+        information_status: UNKNOWN

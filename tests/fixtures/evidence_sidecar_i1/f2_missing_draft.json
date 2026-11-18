@@ -1,0 +1,680 @@
+{
+  "sidecar_version": "uniflow-evidence-sidecar-i1.0",
+  "sidecar_id": "SYNTHETIC-F2",
+  "session_id": "SYNTHETIC-SESSION-F2",
+  "handoff_id": "SYNTHETIC-HANDOFF",
+  "handoff_revision": 1,
+  "handoff_artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "result_binding": {
+    "status": "UNBOUND_DRAFT",
+    "result_sha256": null,
+    "contract_version": null,
+    "reason": "SYNTHETIC draft: no bindable V1 result, required task/answer times unknown."
+  },
+  "data_classification": "SYNTHETIC",
+  "source_artifacts": [
+    {
+      "artifact_id": "SYNTHETIC-SOURCE",
+      "byte_length": 73,
+      "media_type": "text/plain; charset=utf-8",
+      "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+      "source_kind": "SYNTHETIC",
+      "capture_method": "Generated synthetic fixture; no collector"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "TASK-1",
+      "phase": "LEARNING",
+      "task_statement_ref": {
+        "artifact_id": "SYNTHETIC-SOURCE",
+        "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+        "selector": {
+          "kind": "UTF8_BYTE_RANGE",
+          "pointer": null,
+          "start": 0,
+          "end": 73
+        },
+        "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+        "provenance_status": "UNVERIFIED",
+        "source_message_id": null
+      },
+      "issued_time_claim": {
+        "asserted_at": null,
+        "observed_at": null,
+        "received_at": null,
+        "source_clock": null,
+        "timezone_or_offset": null,
+        "precision": null,
+        "interval_start": null,
+        "interval_end": null,
+        "time_status": "MISSING",
+        "provenance": {
+          "provenance_status": "MISSING",
+          "evidence_refs": [],
+          "asserted_by": null,
+          "observer_id": null,
+          "observation_method": null,
+          "reconstruction_reason": null,
+          "gaps": [
+            {
+              "gap_id": "TIME-GAP",
+              "missing_information": "Original event timestamps",
+              "reason": "SYNTHETIC example intentionally has no measured event time."
+            }
+          ]
+        }
+      },
+      "rubric_ref": {
+        "rubric_id": "R1",
+        "revision": 1
+      },
+      "difficulty": "MEDIUM",
+      "difficulty_rationale": "SYNTHETIC calibration",
+      "transfer_of_task_id": null
+    }
+  ],
+  "rubrics": [
+    {
+      "rubric_id": "R1",
+      "revision": 1,
+      "revision_reason": "Initial SYNTHETIC declaration",
+      "rule_version": "i1-binary-1",
+      "task_id": "TASK-1",
+      "phase": "LEARNING",
+      "task_statement_ref": {
+        "artifact_id": "SYNTHETIC-SOURCE",
+        "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+        "selector": {
+          "kind": "UTF8_BYTE_RANGE",
+          "pointer": null,
+          "start": 0,
+          "end": 73
+        },
+        "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+        "provenance_status": "UNVERIFIED",
+        "source_message_id": null
+      },
+      "domain": "R; expressions are inert text, no mathematical check",
+      "accepted_forms": [
+        "SYNTHETIC expanded or factored"
+      ],
+      "difficulty": "MEDIUM",
+      "difficulty_rationale": "SYNTHETIC calibration only",
+      "skill_difficulty_overrides": [],
+      "task_criteria": [
+        {
+          "criterion_id": "TASK-PROCESS",
+          "dimension": "TASK",
+          "skill_id": null,
+          "description": "SYNTHETIC declared criterion TASK-PROCESS",
+          "max_points": "80",
+          "award_rule": "BINARY",
+          "evidence_requirement": "Concrete synthetic answer selector; human relevance review required",
+          "prerequisite_criteria": [],
+          "error_family": null,
+          "final_answer_flag": false
+        },
+        {
+          "criterion_id": "TASK-FINAL",
+          "dimension": "TASK",
+          "skill_id": null,
+          "description": "SYNTHETIC declared criterion TASK-FINAL",
+          "max_points": "20",
+          "award_rule": "BINARY",
+          "evidence_requirement": "Concrete synthetic answer selector; human relevance review required",
+          "prerequisite_criteria": [],
+          "error_family": null,
+          "final_answer_flag": true
+        }
+      ],
+      "skill_criteria": [
+        {
+          "criterion_id": "POWER",
+          "dimension": "SKILL",
+          "skill_id": "SYNTHETIC-POWER",
+          "description": "SYNTHETIC declared criterion POWER",
+          "max_points": "100",
+          "award_rule": "BINARY",
+          "evidence_requirement": "Concrete synthetic answer selector; human relevance review required",
+          "prerequisite_criteria": [],
+          "error_family": null,
+          "final_answer_flag": false
+        }
+      ],
+      "dimension_totals": [
+        {
+          "dimension": "TASK",
+          "skill_id": null,
+          "max_points": "100"
+        },
+        {
+          "dimension": "SKILL",
+          "skill_id": "SYNTHETIC-POWER",
+          "max_points": "100"
+        }
+      ],
+      "final_answer_policy": "SYNTHETIC: explicit final answer, else last unretracted line; conflicting candidates require review.",
+      "error_propagation_policy": "SYNTHETIC: local error family; preserve method credit; no blanket double deduction.",
+      "rubric_provenance": {
+        "provenance_status": "UNVERIFIED",
+        "evidence_refs": [
+          {
+            "artifact_id": "SYNTHETIC-SOURCE",
+            "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+            "selector": {
+              "kind": "UTF8_BYTE_RANGE",
+              "pointer": null,
+              "start": 0,
+              "end": 73
+            },
+            "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+            "provenance_status": "UNVERIFIED",
+            "source_message_id": null
+          }
+        ],
+        "asserted_by": "SYNTHETIC-AUTHOR",
+        "observer_id": null,
+        "observation_method": null,
+        "reconstruction_reason": null,
+        "gaps": []
+      },
+      "declaration_event_ref": "E-RUBRIC",
+      "content_sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E-TASK",
+      "event_type": "TASK_ISSUED",
+      "task_id": "TASK-1",
+      "attempt_id": null,
+      "source_ref": {
+        "artifact_id": "SYNTHETIC-SOURCE",
+        "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+        "selector": {
+          "kind": "UTF8_BYTE_RANGE",
+          "pointer": null,
+          "start": 0,
+          "end": 73
+        },
+        "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+        "provenance_status": "UNVERIFIED",
+        "source_message_id": null
+      },
+      "content_sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+      "time_claim": {
+        "asserted_at": "2026-10-25T12:00:00+01:00",
+        "observed_at": null,
+        "received_at": null,
+        "source_clock": "SYNTHETIC fixed clock",
+        "timezone_or_offset": "+01:00",
+        "precision": "1 second synthetic",
+        "interval_start": null,
+        "interval_end": null,
+        "time_status": "UNVERIFIED",
+        "provenance": {
+          "provenance_status": "UNVERIFIED",
+          "evidence_refs": [
+            {
+              "artifact_id": "SYNTHETIC-SOURCE",
+              "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+              "selector": {
+                "kind": "UTF8_BYTE_RANGE",
+                "pointer": null,
+                "start": 0,
+                "end": 73
+              },
+              "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+              "provenance_status": "UNVERIFIED",
+              "source_message_id": null
+            }
+          ],
+          "asserted_by": "SYNTHETIC-AUTHOR",
+          "observer_id": null,
+          "observation_method": null,
+          "reconstruction_reason": null,
+          "gaps": []
+        }
+      },
+      "parent_event_ids": [],
+      "collector_sequence": null,
+      "provenance": {
+        "provenance_status": "UNVERIFIED",
+        "evidence_refs": [
+          {
+            "artifact_id": "SYNTHETIC-SOURCE",
+            "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+            "selector": {
+              "kind": "UTF8_BYTE_RANGE",
+              "pointer": null,
+              "start": 0,
+              "end": 73
+            },
+            "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+            "provenance_status": "UNVERIFIED",
+            "source_message_id": null
+          }
+        ],
+        "asserted_by": "SYNTHETIC-AUTHOR",
+        "observer_id": null,
+        "observation_method": null,
+        "reconstruction_reason": null,
+        "gaps": []
+      }
+    },
+    {
+      "event_id": "E-RUBRIC",
+      "event_type": "RUBRIC_DECLARED",
+      "task_id": "TASK-1",
+      "attempt_id": null,
+      "source_ref": {
+        "artifact_id": "SYNTHETIC-SOURCE",
+        "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+        "selector": {
+          "kind": "UTF8_BYTE_RANGE",
+          "pointer": null,
+          "start": 0,
+          "end": 73
+        },
+        "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+        "provenance_status": "UNVERIFIED",
+        "source_message_id": null
+      },
+      "content_sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+      "time_claim": {
+        "asserted_at": "2026-10-25T12:00:00+01:00",
+        "observed_at": null,
+        "received_at": null,
+        "source_clock": "SYNTHETIC fixed clock",
+        "timezone_or_offset": "+01:00",
+        "precision": "1 second synthetic",
+        "interval_start": null,
+        "interval_end": null,
+        "time_status": "UNVERIFIED",
+        "provenance": {
+          "provenance_status": "UNVERIFIED",
+          "evidence_refs": [
+            {
+              "artifact_id": "SYNTHETIC-SOURCE",
+              "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+              "selector": {
+                "kind": "UTF8_BYTE_RANGE",
+                "pointer": null,
+                "start": 0,
+                "end": 73
+              },
+              "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+              "provenance_status": "UNVERIFIED",
+              "source_message_id": null
+            }
+          ],
+          "asserted_by": "SYNTHETIC-AUTHOR",
+          "observer_id": null,
+          "observation_method": null,
+          "reconstruction_reason": null,
+          "gaps": []
+        }
+      },
+      "parent_event_ids": [],
+      "collector_sequence": null,
+      "provenance": {
+        "provenance_status": "UNVERIFIED",
+        "evidence_refs": [
+          {
+            "artifact_id": "SYNTHETIC-SOURCE",
+            "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+            "selector": {
+              "kind": "UTF8_BYTE_RANGE",
+              "pointer": null,
+              "start": 0,
+              "end": 73
+            },
+            "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+            "provenance_status": "UNVERIFIED",
+            "source_message_id": null
+          }
+        ],
+        "asserted_by": "SYNTHETIC-AUTHOR",
+        "observer_id": null,
+        "observation_method": null,
+        "reconstruction_reason": null,
+        "gaps": []
+      }
+    },
+    {
+      "event_id": "E-A1",
+      "event_type": "ANSWER_SUBMITTED",
+      "task_id": "TASK-1",
+      "attempt_id": "A1",
+      "source_ref": {
+        "artifact_id": "SYNTHETIC-SOURCE",
+        "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+        "selector": {
+          "kind": "UTF8_BYTE_RANGE",
+          "pointer": null,
+          "start": 0,
+          "end": 73
+        },
+        "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+        "provenance_status": "UNVERIFIED",
+        "source_message_id": null
+      },
+      "content_sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+      "time_claim": {
+        "asserted_at": "2026-10-25T12:00:00+01:00",
+        "observed_at": null,
+        "received_at": null,
+        "source_clock": "SYNTHETIC fixed clock",
+        "timezone_or_offset": "+01:00",
+        "precision": "1 second synthetic",
+        "interval_start": null,
+        "interval_end": null,
+        "time_status": "UNVERIFIED",
+        "provenance": {
+          "provenance_status": "UNVERIFIED",
+          "evidence_refs": [
+            {
+              "artifact_id": "SYNTHETIC-SOURCE",
+              "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+              "selector": {
+                "kind": "UTF8_BYTE_RANGE",
+                "pointer": null,
+                "start": 0,
+                "end": 73
+              },
+              "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+              "provenance_status": "UNVERIFIED",
+              "source_message_id": null
+            }
+          ],
+          "asserted_by": "SYNTHETIC-AUTHOR",
+          "observer_id": null,
+          "observation_method": null,
+          "reconstruction_reason": null,
+          "gaps": []
+        }
+      },
+      "parent_event_ids": [],
+      "collector_sequence": null,
+      "provenance": {
+        "provenance_status": "UNVERIFIED",
+        "evidence_refs": [
+          {
+            "artifact_id": "SYNTHETIC-SOURCE",
+            "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+            "selector": {
+              "kind": "UTF8_BYTE_RANGE",
+              "pointer": null,
+              "start": 0,
+              "end": 73
+            },
+            "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+            "provenance_status": "UNVERIFIED",
+            "source_message_id": null
+          }
+        ],
+        "asserted_by": "SYNTHETIC-AUTHOR",
+        "observer_id": null,
+        "observation_method": null,
+        "reconstruction_reason": null,
+        "gaps": []
+      }
+    },
+    {
+      "event_id": "E-AS1",
+      "event_type": "ASSESSMENT_RECORDED",
+      "task_id": "TASK-1",
+      "attempt_id": "A1",
+      "source_ref": {
+        "artifact_id": "SYNTHETIC-SOURCE",
+        "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+        "selector": {
+          "kind": "UTF8_BYTE_RANGE",
+          "pointer": null,
+          "start": 0,
+          "end": 73
+        },
+        "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+        "provenance_status": "UNVERIFIED",
+        "source_message_id": null
+      },
+      "content_sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+      "time_claim": {
+        "asserted_at": "2026-10-25T12:00:00+01:00",
+        "observed_at": null,
+        "received_at": null,
+        "source_clock": "SYNTHETIC fixed clock",
+        "timezone_or_offset": "+01:00",
+        "precision": "1 second synthetic",
+        "interval_start": null,
+        "interval_end": null,
+        "time_status": "UNVERIFIED",
+        "provenance": {
+          "provenance_status": "UNVERIFIED",
+          "evidence_refs": [
+            {
+              "artifact_id": "SYNTHETIC-SOURCE",
+              "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+              "selector": {
+                "kind": "UTF8_BYTE_RANGE",
+                "pointer": null,
+                "start": 0,
+                "end": 73
+              },
+              "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+              "provenance_status": "UNVERIFIED",
+              "source_message_id": null
+            }
+          ],
+          "asserted_by": "SYNTHETIC-AUTHOR",
+          "observer_id": null,
+          "observation_method": null,
+          "reconstruction_reason": null,
+          "gaps": []
+        }
+      },
+      "parent_event_ids": [],
+      "collector_sequence": null,
+      "provenance": {
+        "provenance_status": "UNVERIFIED",
+        "evidence_refs": [
+          {
+            "artifact_id": "SYNTHETIC-SOURCE",
+            "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+            "selector": {
+              "kind": "UTF8_BYTE_RANGE",
+              "pointer": null,
+              "start": 0,
+              "end": 73
+            },
+            "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+            "provenance_status": "UNVERIFIED",
+            "source_message_id": null
+          }
+        ],
+        "asserted_by": "SYNTHETIC-AUTHOR",
+        "observer_id": null,
+        "observation_method": null,
+        "reconstruction_reason": null,
+        "gaps": []
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "task_id": "TASK-1",
+      "attempt_id": "A1",
+      "phase": "LEARNING",
+      "attempt_order": 1,
+      "answer_evidence": [
+        {
+          "artifact_id": "SYNTHETIC-SOURCE",
+          "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+          "selector": {
+            "kind": "UTF8_BYTE_RANGE",
+            "pointer": null,
+            "start": 0,
+            "end": 73
+          },
+          "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+          "provenance_status": "UNVERIFIED",
+          "source_message_id": null
+        }
+      ],
+      "answer_time_claim": {
+        "asserted_at": null,
+        "observed_at": null,
+        "received_at": null,
+        "source_clock": null,
+        "timezone_or_offset": null,
+        "precision": null,
+        "interval_start": null,
+        "interval_end": null,
+        "time_status": "MISSING",
+        "provenance": {
+          "provenance_status": "MISSING",
+          "evidence_refs": [],
+          "asserted_by": null,
+          "observer_id": null,
+          "observation_method": null,
+          "reconstruction_reason": null,
+          "gaps": [
+            {
+              "gap_id": "TIME-GAP",
+              "missing_information": "Original event timestamps",
+              "reason": "SYNTHETIC example intentionally has no measured event time."
+            }
+          ]
+        }
+      },
+      "assistance_before_attempt": {
+        "event_refs": [],
+        "coverage": "PARTIAL",
+        "scope": "SYNTHETIC supplied excerpt only",
+        "classification": "UNKNOWN",
+        "availability": "UNKNOWN",
+        "usage": "UNKNOWN",
+        "access": "UNKNOWN"
+      },
+      "assessment": [
+        "ASSESSMENT-A1"
+      ],
+      "feedback_after_attempt": [],
+      "correction_attempt": null,
+      "independence_status": "UNVERIFIED",
+      "provenance_status": "UNVERIFIED",
+      "provenance": {
+        "provenance_status": "UNVERIFIED",
+        "evidence_refs": [
+          {
+            "artifact_id": "SYNTHETIC-SOURCE",
+            "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+            "selector": {
+              "kind": "UTF8_BYTE_RANGE",
+              "pointer": null,
+              "start": 0,
+              "end": 73
+            },
+            "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+            "provenance_status": "UNVERIFIED",
+            "source_message_id": null
+          }
+        ],
+        "asserted_by": "SYNTHETIC-AUTHOR",
+        "observer_id": null,
+        "observation_method": null,
+        "reconstruction_reason": null,
+        "gaps": []
+      }
+    }
+  ],
+  "assessments": [
+    {
+      "assessment_id": "ASSESSMENT-A1",
+      "revision": 1,
+      "revision_reason": "Initial SYNTHETIC proposal",
+      "attempt_id": "A1",
+      "rubric_revision_ref": {
+        "rubric_id": "R1",
+        "revision": 1
+      },
+      "criterion_awards": [
+        {
+          "criterion_id": "TASK-PROCESS",
+          "awarded_points": null,
+          "status": "PENDING",
+          "evidence_refs": [],
+          "assessed_components": [],
+          "correctness": "UNKNOWN",
+          "deduction_reason": null,
+          "error_refs": [],
+          "propagation_from": [],
+          "validator_report_refs": [],
+          "review_status": "HUMAN_REVIEW_REQUIRED"
+        },
+        {
+          "criterion_id": "TASK-FINAL",
+          "awarded_points": null,
+          "status": "PENDING",
+          "evidence_refs": [],
+          "assessed_components": [],
+          "correctness": "UNKNOWN",
+          "deduction_reason": null,
+          "error_refs": [],
+          "propagation_from": [],
+          "validator_report_refs": [],
+          "review_status": "HUMAN_REVIEW_REQUIRED"
+        },
+        {
+          "criterion_id": "POWER",
+          "awarded_points": null,
+          "status": "PENDING",
+          "evidence_refs": [],
+          "assessed_components": [],
+          "correctness": "UNKNOWN",
+          "deduction_reason": null,
+          "error_refs": [],
+          "propagation_from": [],
+          "validator_report_refs": [],
+          "review_status": "HUMAN_REVIEW_REQUIRED"
+        }
+      ],
+      "qualitative_observations": [],
+      "validator_reports": [],
+      "review_status": "HUMAN_REVIEW_REQUIRED",
+      "supersedes_assessment_id": null,
+      "provenance": {
+        "provenance_status": "UNVERIFIED",
+        "evidence_refs": [
+          {
+            "artifact_id": "SYNTHETIC-SOURCE",
+            "sha256": "50bbfe7bf37672db8ea4f3df22136c1f24d03b5ad29b634c18500bf6a17c98ce",
+            "selector": {
+              "kind": "UTF8_BYTE_RANGE",
+              "pointer": null,
+              "start": 0,
+              "end": 73
+            },
+            "quote": "SYNTHETIC task; answer; rubric; explanation; correction. No learner data.",
+            "provenance_status": "UNVERIFIED",
+            "source_message_id": null
+          }
+        ],
+        "asserted_by": "SYNTHETIC-AUTHOR",
+        "observer_id": null,
+        "observation_method": null,
+        "reconstruction_reason": null,
+        "gaps": []
+      }
+    }
+  ],
+  "reviews": [],
+  "gaps": [
+    {
+      "gap_id": "TIME-GAP",
+      "missing_information": "Original event timestamps",
+      "reason": "SYNTHETIC example intentionally has no measured event time."
+    }
+  ]
+}

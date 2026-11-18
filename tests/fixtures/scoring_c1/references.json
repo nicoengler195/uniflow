@@ -1,0 +1,904 @@
+{
+  "rubrics": {
+    "R1": {
+      "task": [
+        {
+          "criterion": "d(3x^4)",
+          "max": 32
+        },
+        {
+          "criterion": "d(-2x^3)",
+          "max": 24
+        },
+        {
+          "criterion": "d(5x)",
+          "max": 16
+        },
+        {
+          "criterion": "d(-7)",
+          "max": 8
+        },
+        {
+          "criterion": "final",
+          "max": 20
+        }
+      ],
+      "skills": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "d(3x^4)",
+            "max": 40
+          },
+          {
+            "criterion": "d(-2x^3)",
+            "max": 30
+          },
+          {
+            "criterion": "d(5x)",
+            "max": 20
+          },
+          {
+            "criterion": "d(-7)",
+            "max": 10
+          }
+        ]
+      }
+    },
+    "R2": {
+      "task": [
+        {
+          "criterion": "u",
+          "max": 5
+        },
+        {
+          "criterion": "v",
+          "max": 5
+        },
+        {
+          "criterion": "notation",
+          "max": 5
+        },
+        {
+          "criterion": "u'",
+          "max": 15
+        },
+        {
+          "criterion": "v'",
+          "max": 10
+        },
+        {
+          "criterion": "substitution",
+          "max": 20
+        },
+        {
+          "criterion": "multiply",
+          "max": 20
+        },
+        {
+          "criterion": "final",
+          "max": 20
+        }
+      ],
+      "skills": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "u'",
+            "max": 60
+          },
+          {
+            "criterion": "v'",
+            "max": 40
+          }
+        ],
+        "SYNTHETIC_CHAIN_RULE": [
+          {
+            "criterion": "substitution",
+            "max": 50
+          },
+          {
+            "criterion": "multiply",
+            "max": 50
+          }
+        ],
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": [
+          {
+            "criterion": "u",
+            "max": 30
+          },
+          {
+            "criterion": "v",
+            "max": 30
+          },
+          {
+            "criterion": "composition",
+            "max": 30
+          },
+          {
+            "criterion": "notation",
+            "max": 10
+          }
+        ]
+      }
+    },
+    "R3": {
+      "task": [
+        {
+          "criterion": "a",
+          "max": 10
+        },
+        {
+          "criterion": "b",
+          "max": 10
+        },
+        {
+          "criterion": "f",
+          "max": 10
+        },
+        {
+          "criterion": "a'",
+          "max": 10
+        },
+        {
+          "criterion": "inner_chain",
+          "max": 15
+        },
+        {
+          "criterion": "b'",
+          "max": 15
+        },
+        {
+          "criterion": "outer_chain",
+          "max": 10
+        },
+        {
+          "criterion": "final",
+          "max": 20
+        }
+      ],
+      "skills": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "a'",
+            "max": 30
+          },
+          {
+            "criterion": "local3",
+            "max": 30
+          },
+          {
+            "criterion": "local4",
+            "max": 40
+          }
+        ],
+        "SYNTHETIC_CHAIN_RULE": [
+          {
+            "criterion": "inner_chain",
+            "max": 30
+          },
+          {
+            "criterion": "b'",
+            "max": 30
+          },
+          {
+            "criterion": "outer_chain",
+            "max": 40
+          }
+        ],
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": [
+          {
+            "criterion": "a",
+            "max": 30
+          },
+          {
+            "criterion": "b",
+            "max": 30
+          },
+          {
+            "criterion": "f",
+            "max": 40
+          }
+        ]
+      }
+    },
+    "R4": {
+      "task": [
+        {
+          "criterion": "u",
+          "max": 10
+        },
+        {
+          "criterion": "v",
+          "max": 10
+        },
+        {
+          "criterion": "u'",
+          "max": 15
+        },
+        {
+          "criterion": "v'",
+          "max": 15
+        },
+        {
+          "criterion": "substitution",
+          "max": 15
+        },
+        {
+          "criterion": "multiply",
+          "max": 15
+        },
+        {
+          "criterion": "final",
+          "max": 20
+        }
+      ],
+      "skills": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "u'",
+            "max": 50
+          },
+          {
+            "criterion": "v'",
+            "max": 50
+          }
+        ],
+        "SYNTHETIC_CHAIN_RULE": [
+          {
+            "criterion": "substitution",
+            "max": 50
+          },
+          {
+            "criterion": "multiply",
+            "max": 50
+          }
+        ],
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": [
+          {
+            "criterion": "u",
+            "max": 30
+          },
+          {
+            "criterion": "v",
+            "max": 30
+          },
+          {
+            "criterion": "substitution",
+            "max": 40
+          }
+        ]
+      }
+    }
+  },
+  "cases": {
+    "T1": {
+      "rubric_id": "R1",
+      "task_id": "EXAM-001",
+      "task": "Differentiate 3x^4-2x^3+5x-7 termwise and give a final derivative.",
+      "answer": "d(3x^4)=12x^3; d(-2x^3)=-6x^2; d(5x)=5; d(-7)=0. f'=12x^3-6x^2+5. Final: 108x^2+5",
+      "difficulty": "EASY",
+      "difficulty_reason": "Four direct polynomial terms",
+      "task_awards": [
+        {
+          "criterion": "d(3x^4)",
+          "max": 32,
+          "awarded": 32,
+          "quote": "d(3x^4)=12x^3"
+        },
+        {
+          "criterion": "d(-2x^3)",
+          "max": 24,
+          "awarded": 24,
+          "quote": "d(-2x^3)=-6x^2"
+        },
+        {
+          "criterion": "d(5x)",
+          "max": 16,
+          "awarded": 16,
+          "quote": "d(5x)=5"
+        },
+        {
+          "criterion": "d(-7)",
+          "max": 8,
+          "awarded": 8,
+          "quote": "d(-7)=0"
+        },
+        {
+          "criterion": "final",
+          "max": 20,
+          "awarded": 0,
+          "quote": "Final: 108x^2+5"
+        }
+      ],
+      "skill_awards": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "d(3x^4)",
+            "max": 40,
+            "awarded": 40,
+            "quote": "d(3x^4)=12x^3"
+          },
+          {
+            "criterion": "d(-2x^3)",
+            "max": 30,
+            "awarded": 30,
+            "quote": "d(-2x^3)=-6x^2"
+          },
+          {
+            "criterion": "d(5x)",
+            "max": 20,
+            "awarded": 20,
+            "quote": "d(5x)=5"
+          },
+          {
+            "criterion": "d(-7)",
+            "max": 10,
+            "awarded": 10,
+            "quote": "d(-7)=0"
+          }
+        ]
+      },
+      "expected_fraction": 0.8,
+      "expected_marks": {
+        "SYNTHETIC_POWER_RULE": 1.0
+      },
+      "review_status": "HUMAN_REVIEW_REQUIRED",
+      "provenance": "NEW_SYNTHETIC; reconstructed/derived scenario, not original chat; rubric fixed for this test only, no historical predeclaration proof"
+    },
+    "T2": {
+      "rubric_id": "R2",
+      "task_id": "EXAM-002",
+      "task": "Differentiate (x^3-2x+4)^4, identifying inner/outer functions and derivatives.",
+      "answer": "u=x^3-2x+4; outer function v(u)=u^4; f=v(u(x)); u'=3x^2-2; v'=4u^3. Final: f'=4(x^3-2x+4)^3(3x^2-2)",
+      "difficulty": "MEDIUM",
+      "difficulty_reason": "One polynomial inner function",
+      "task_awards": [
+        {
+          "criterion": "u",
+          "max": 5,
+          "awarded": 5,
+          "quote": "u=x^3-2x+4"
+        },
+        {
+          "criterion": "v",
+          "max": 5,
+          "awarded": 5,
+          "quote": "outer function v(u)=u^4"
+        },
+        {
+          "criterion": "notation",
+          "max": 5,
+          "awarded": 5,
+          "quote": "v'=4u^3"
+        },
+        {
+          "criterion": "u'",
+          "max": 15,
+          "awarded": 15,
+          "quote": "u'=3x^2-2"
+        },
+        {
+          "criterion": "v'",
+          "max": 10,
+          "awarded": 10,
+          "quote": "v'=4u^3"
+        },
+        {
+          "criterion": "substitution",
+          "max": 20,
+          "awarded": 20,
+          "quote": "4(x^3-2x+4)^3"
+        },
+        {
+          "criterion": "multiply",
+          "max": 20,
+          "awarded": 20,
+          "quote": "4(x^3-2x+4)^3(3x^2-2)"
+        },
+        {
+          "criterion": "final",
+          "max": 20,
+          "awarded": 20,
+          "quote": "Final: f'=4(x^3-2x+4)^3(3x^2-2)"
+        }
+      ],
+      "skill_awards": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "u'",
+            "max": 60,
+            "awarded": 60,
+            "quote": "u'=3x^2-2"
+          },
+          {
+            "criterion": "v'",
+            "max": 40,
+            "awarded": 40,
+            "quote": "v'=4u^3"
+          }
+        ],
+        "SYNTHETIC_CHAIN_RULE": [
+          {
+            "criterion": "substitution",
+            "max": 50,
+            "awarded": 50,
+            "quote": "4(x^3-2x+4)^3"
+          },
+          {
+            "criterion": "multiply",
+            "max": 50,
+            "awarded": 50,
+            "quote": "4(x^3-2x+4)^3(3x^2-2)"
+          }
+        ],
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": [
+          {
+            "criterion": "u",
+            "max": 30,
+            "awarded": 30,
+            "quote": "u=x^3-2x+4"
+          },
+          {
+            "criterion": "v",
+            "max": 30,
+            "awarded": 30,
+            "quote": "outer function v(u)=u^4"
+          },
+          {
+            "criterion": "composition",
+            "max": 30,
+            "awarded": 30,
+            "quote": "f=v(u(x))"
+          },
+          {
+            "criterion": "notation",
+            "max": 10,
+            "awarded": 10,
+            "quote": "v'=4u^3"
+          }
+        ]
+      },
+      "expected_fraction": 1.0,
+      "expected_marks": {
+        "SYNTHETIC_POWER_RULE": 1.0,
+        "SYNTHETIC_CHAIN_RULE": 1.0,
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": 1.0
+      },
+      "review_status": "HUMAN_REVIEW_REQUIRED",
+      "provenance": "NEW_SYNTHETIC; reconstructed/derived scenario, not original chat; rubric fixed for this test only, no historical predeclaration proof"
+    },
+    "T3": {
+      "rubric_id": "R2",
+      "task_id": "EXAM-002",
+      "task": "Differentiate (x^3-2x+4)^4, identifying inner/outer functions and derivatives.",
+      "answer": "u=x^3-2x+4; outer function v(u)=u^4; f=v(u(x)); u'=3x^2-2; derivative line labelled v(x)=4u^3. Final: f'=4(x^3-2x+4)^3(3x^2-2)",
+      "difficulty": "MEDIUM",
+      "difficulty_reason": "One polynomial inner function",
+      "task_awards": [
+        {
+          "criterion": "u",
+          "max": 5,
+          "awarded": 5,
+          "quote": "u=x^3-2x+4"
+        },
+        {
+          "criterion": "v",
+          "max": 5,
+          "awarded": 5,
+          "quote": "outer function v(u)=u^4"
+        },
+        {
+          "criterion": "notation",
+          "max": 5,
+          "awarded": 0,
+          "quote": "v(x)=4u^3"
+        },
+        {
+          "criterion": "u'",
+          "max": 15,
+          "awarded": 15,
+          "quote": "u'=3x^2-2"
+        },
+        {
+          "criterion": "v'",
+          "max": 10,
+          "awarded": 10,
+          "quote": "v(x)=4u^3"
+        },
+        {
+          "criterion": "substitution",
+          "max": 20,
+          "awarded": 20,
+          "quote": "4(x^3-2x+4)^3"
+        },
+        {
+          "criterion": "multiply",
+          "max": 20,
+          "awarded": 20,
+          "quote": "4(x^3-2x+4)^3(3x^2-2)"
+        },
+        {
+          "criterion": "final",
+          "max": 20,
+          "awarded": 20,
+          "quote": "Final: f'=4(x^3-2x+4)^3(3x^2-2)"
+        }
+      ],
+      "skill_awards": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "u'",
+            "max": 60,
+            "awarded": 60,
+            "quote": "u'=3x^2-2"
+          },
+          {
+            "criterion": "v'",
+            "max": 40,
+            "awarded": 40,
+            "quote": "v(x)=4u^3"
+          }
+        ],
+        "SYNTHETIC_CHAIN_RULE": [
+          {
+            "criterion": "substitution",
+            "max": 50,
+            "awarded": 50,
+            "quote": "4(x^3-2x+4)^3"
+          },
+          {
+            "criterion": "multiply",
+            "max": 50,
+            "awarded": 50,
+            "quote": "4(x^3-2x+4)^3(3x^2-2)"
+          }
+        ],
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": [
+          {
+            "criterion": "u",
+            "max": 30,
+            "awarded": 30,
+            "quote": "u=x^3-2x+4"
+          },
+          {
+            "criterion": "v",
+            "max": 30,
+            "awarded": 30,
+            "quote": "outer function v(u)=u^4"
+          },
+          {
+            "criterion": "composition",
+            "max": 30,
+            "awarded": 30,
+            "quote": "f=v(u(x))"
+          },
+          {
+            "criterion": "notation",
+            "max": 10,
+            "awarded": 0,
+            "quote": "v(x)=4u^3"
+          }
+        ]
+      },
+      "expected_fraction": 0.95,
+      "expected_marks": {
+        "SYNTHETIC_POWER_RULE": 1.0,
+        "SYNTHETIC_CHAIN_RULE": 1.0,
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": 0.9
+      },
+      "review_status": "HUMAN_REVIEW_REQUIRED",
+      "provenance": "NEW_SYNTHETIC; reconstructed/derived scenario, not original chat; rubric fixed for this test only, no historical predeclaration proof"
+    },
+    "T4": {
+      "rubric_id": "R3",
+      "task_id": "EXAM-003",
+      "task": "Differentiate ((x^2+1)^3-2x)^4; identify all three levels and derivatives.",
+      "answer": "a=x^2+1; b=a^3-2x; f=(ab)^4; a'=2x; local factor for a^3: 3a^2; b'=3a^2*(-2); Final: f'=4(ab)^3*3a^2*(-2)",
+      "difficulty": "HARD",
+      "difficulty_reason": "Multiple levels or transfer with polynomial substitution",
+      "task_awards": [
+        {
+          "criterion": "a",
+          "max": 10,
+          "awarded": 10,
+          "quote": "a=x^2+1"
+        },
+        {
+          "criterion": "b",
+          "max": 10,
+          "awarded": 10,
+          "quote": "b=a^3-2x"
+        },
+        {
+          "criterion": "f",
+          "max": 10,
+          "awarded": 0,
+          "quote": "f=(ab)^4"
+        },
+        {
+          "criterion": "a'",
+          "max": 10,
+          "awarded": 10,
+          "quote": "a'=2x"
+        },
+        {
+          "criterion": "inner_chain",
+          "max": 15,
+          "awarded": 0,
+          "quote": "b'=3a^2*(-2)"
+        },
+        {
+          "criterion": "b'",
+          "max": 15,
+          "awarded": 0,
+          "quote": "b'=3a^2*(-2)"
+        },
+        {
+          "criterion": "outer_chain",
+          "max": 10,
+          "awarded": 0,
+          "quote": "Final: f'=4(ab)^3*3a^2*(-2)"
+        },
+        {
+          "criterion": "final",
+          "max": 20,
+          "awarded": 0,
+          "quote": "Final: f'=4(ab)^3*3a^2*(-2)"
+        }
+      ],
+      "skill_awards": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "a'",
+            "max": 30,
+            "awarded": 30,
+            "quote": "a'=2x"
+          },
+          {
+            "criterion": "local3",
+            "max": 30,
+            "awarded": 30,
+            "quote": "local factor for a^3: 3a^2"
+          },
+          {
+            "criterion": "local4",
+            "max": 40,
+            "awarded": 0,
+            "quote": "Final: f'=4(ab)^3*3a^2*(-2)"
+          }
+        ],
+        "SYNTHETIC_CHAIN_RULE": [
+          {
+            "criterion": "inner_chain",
+            "max": 30,
+            "awarded": 0,
+            "quote": "b'=3a^2*(-2)"
+          },
+          {
+            "criterion": "b'",
+            "max": 30,
+            "awarded": 0,
+            "quote": "b'=3a^2*(-2)"
+          },
+          {
+            "criterion": "outer_chain",
+            "max": 40,
+            "awarded": 0,
+            "quote": "Final: f'=4(ab)^3*3a^2*(-2)"
+          }
+        ],
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": [
+          {
+            "criterion": "a",
+            "max": 30,
+            "awarded": 30,
+            "quote": "a=x^2+1"
+          },
+          {
+            "criterion": "b",
+            "max": 30,
+            "awarded": 30,
+            "quote": "b=a^3-2x"
+          },
+          {
+            "criterion": "f",
+            "max": 40,
+            "awarded": 0,
+            "quote": "f=(ab)^4"
+          }
+        ]
+      },
+      "expected_fraction": 0.3,
+      "expected_marks": {
+        "SYNTHETIC_POWER_RULE": 0.6,
+        "SYNTHETIC_CHAIN_RULE": 0.0,
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": 0.6
+      },
+      "review_status": "HUMAN_REVIEW_REQUIRED",
+      "provenance": "NEW_SYNTHETIC; reconstructed/derived scenario, not original chat; rubric fixed for this test only, no historical predeclaration proof"
+    },
+    "T5": {
+      "rubric_id": "R4",
+      "task_id": "LEARN-003",
+      "task": "Differentiate (x^2-3x+1)^5; identify inner/outer functions and derivatives.",
+      "answer": "u=x^2-3x+1; v=u^5; u'=2x-3; v'=4u^4; Final: f'=4(2x-3)^4(2x-3)",
+      "difficulty": "HARD",
+      "difficulty_reason": "Multiple levels or transfer with polynomial substitution",
+      "task_awards": [
+        {
+          "criterion": "u",
+          "max": 10,
+          "awarded": 10,
+          "quote": "u=x^2-3x+1"
+        },
+        {
+          "criterion": "v",
+          "max": 10,
+          "awarded": 10,
+          "quote": "v=u^5"
+        },
+        {
+          "criterion": "u'",
+          "max": 15,
+          "awarded": 15,
+          "quote": "u'=2x-3"
+        },
+        {
+          "criterion": "v'",
+          "max": 15,
+          "awarded": 0,
+          "quote": "v'=4u^4"
+        },
+        {
+          "criterion": "substitution",
+          "max": 15,
+          "awarded": 0,
+          "quote": "4(2x-3)^4"
+        },
+        {
+          "criterion": "multiply",
+          "max": 15,
+          "awarded": 15,
+          "quote": "4(2x-3)^4(2x-3)"
+        },
+        {
+          "criterion": "final",
+          "max": 20,
+          "awarded": 0,
+          "quote": "Final: f'=4(2x-3)^4(2x-3)"
+        }
+      ],
+      "skill_awards": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "u'",
+            "max": 50,
+            "awarded": 50,
+            "quote": "u'=2x-3"
+          },
+          {
+            "criterion": "v'",
+            "max": 50,
+            "awarded": 0,
+            "quote": "v'=4u^4"
+          }
+        ],
+        "SYNTHETIC_CHAIN_RULE": [
+          {
+            "criterion": "substitution",
+            "max": 50,
+            "awarded": 0,
+            "quote": "4(2x-3)^4"
+          },
+          {
+            "criterion": "multiply",
+            "max": 50,
+            "awarded": 50,
+            "quote": "4(2x-3)^4(2x-3)"
+          }
+        ],
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": [
+          {
+            "criterion": "u",
+            "max": 30,
+            "awarded": 30,
+            "quote": "u=x^2-3x+1"
+          },
+          {
+            "criterion": "v",
+            "max": 30,
+            "awarded": 30,
+            "quote": "v=u^5"
+          },
+          {
+            "criterion": "substitution",
+            "max": 40,
+            "awarded": 0,
+            "quote": "4(2x-3)^4"
+          }
+        ]
+      },
+      "expected_fraction": 0.5,
+      "expected_marks": {
+        "SYNTHETIC_POWER_RULE": 0.5,
+        "SYNTHETIC_CHAIN_RULE": 0.5,
+        "SYNTHETIC_COMPOSITE_DERIVATIVE": 0.6
+      },
+      "review_status": "HUMAN_REVIEW_REQUIRED",
+      "provenance": "NEW_SYNTHETIC; reconstructed/derived scenario, not original chat; rubric fixed for this test only, no historical predeclaration proof"
+    },
+    "T8": {
+      "rubric_id": "R1",
+      "task_id": "EXAM-001",
+      "task": "Differentiate 3x^4-2x^3+5x-7 termwise and give a final derivative.",
+      "answer": "d(3x^4)=12x^3; d(-2x^3)=-6x^2; d(5x)=5; d(-7)=0. f'=12x^3-6x^2+5. Final: x^2(12x-6)+5",
+      "difficulty": "EASY",
+      "difficulty_reason": "Four direct polynomial terms",
+      "task_awards": [
+        {
+          "criterion": "d(3x^4)",
+          "max": 32,
+          "awarded": 32,
+          "quote": "d(3x^4)=12x^3"
+        },
+        {
+          "criterion": "d(-2x^3)",
+          "max": 24,
+          "awarded": 24,
+          "quote": "d(-2x^3)=-6x^2"
+        },
+        {
+          "criterion": "d(5x)",
+          "max": 16,
+          "awarded": 16,
+          "quote": "d(5x)=5"
+        },
+        {
+          "criterion": "d(-7)",
+          "max": 8,
+          "awarded": 8,
+          "quote": "d(-7)=0"
+        },
+        {
+          "criterion": "final",
+          "max": 20,
+          "awarded": 20,
+          "quote": "Final: x^2(12x-6)+5"
+        }
+      ],
+      "skill_awards": {
+        "SYNTHETIC_POWER_RULE": [
+          {
+            "criterion": "d(3x^4)",
+            "max": 40,
+            "awarded": 40,
+            "quote": "d(3x^4)=12x^3"
+          },
+          {
+            "criterion": "d(-2x^3)",
+            "max": 30,
+            "awarded": 30,
+            "quote": "d(-2x^3)=-6x^2"
+          },
+          {
+            "criterion": "d(5x)",
+            "max": 20,
+            "awarded": 20,
+            "quote": "d(5x)=5"
+          },
+          {
+            "criterion": "d(-7)",
+            "max": 10,
+            "awarded": 10,
+            "quote": "d(-7)=0"
+          }
+        ]
+      },
+      "expected_fraction": 1.0,
+      "expected_marks": {
+        "SYNTHETIC_POWER_RULE": 1.0
+      },
+      "review_status": "HUMAN_REVIEW_REQUIRED",
+      "provenance": "NEW_SYNTHETIC; reconstructed/derived scenario, not original chat; rubric fixed for this test only, no historical predeclaration proof"
+    }
+  }
+}
